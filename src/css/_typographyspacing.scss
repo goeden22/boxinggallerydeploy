@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'raleway-bold';
+      src: url("./fonts/Raleway-Bold.ttf");
+  }
+  @font-face {
+    font-family: 'raleway-semibold';
+      src: url("./fonts/Raleway-SemiBold.ttf");
+  }
+  h1{
+    margin: 0;
+  }
+  
+  $regular: 400;
+  $light: 300;
+
+  $primaryColor: #ffffff;
+  $primaryLightShaded: #d7d7d7;
+  $primaryShaded: #5c5c5c;
+
+  $primaryFont: 'raleway-bold';
+  $primaryFontLight: 'raleway-semibold';
+  $secondaryFont : 'Roboto Slab';
+
+  $xsmallSpace: 7px;
+  $smallSpace: 20px;
+  $mediumSpace: 40px;
+  $largeSpace: 75px;
+  $xlargeSpace: 125px;
+  $menuSpace: 290px;
+
+  $breakMedium: 1200px;  
+  $breakSmall: 820px;
+  $breakMobile: 600px;
+  .big-header{
+    font-family: $primaryFont;
+    font-size: 68px;
+    color: $primaryColor;
+    padding: 0;
+    margin: 0;
+    font-weight: 300
+  }
+  .small-header{
+    font-family: $primaryFontLight;
+    font-size: 28px;
+    color: $primaryColor;
+    padding: $xsmallSpace 0;
+    margin: 0;
+    letter-spacing: 3px;
+  }
+  .big-paragraph{
+    font-family: $secondaryFont;
+    font-weight: $regular;
+    font-size: 16px;
+    color: $primaryColor;
+    line-height: 1.8
+  }
+  .light-paragraph{
+      font-family: $secondaryFont;
+      font-weight: $light;
+      font-size: 16px;
+      color: $primaryColor;
+  
+  }
+  .menu-paragraph{
+    font-family: $secondaryFont;
+    font-weight: $regular;
+    font-size: 14px;
+    color: $primaryColor;
+    margin: 0 auto;
+   
+  }
+  .underline{
+    text-decoration: underline;
+    text-decoration-color: $primaryColor;
+  }

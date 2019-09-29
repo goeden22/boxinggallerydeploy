@@ -1,26 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import './css/App.scss';
+import MainLoader from './components/MainLoader.js'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Articles from './components/Articles'
 
-export default App;
+
+
+class App extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+     appear: false,
+     mainLoader: true
+    }
+
+    this.setLoaded = () => {
+      this.setState({mainLoader: false})
+    }
+  
+
+  }
+ 
+  
+
+  render() {
+   
+    return (
+      
+    
+      
+      <div className="App">
+      {this.state.mainLoader ? <MainLoader setLoaded={this.setLoaded.bind(this)}/> : <Articles />}
+      
+
+      </div>
+        
+        
+        );
+      }
+    }
+    export default App;
