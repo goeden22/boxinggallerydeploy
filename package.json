@@ -2,7 +2,6 @@
   "name": "boxppv",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://goeden22.github.io/ppvgallerydeploy/",
   "dependencies": {
     "background-image-on-load": "^1.1.0",
     "gh-pages": "^2.1.1",
