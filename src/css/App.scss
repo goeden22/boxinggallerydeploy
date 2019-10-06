@@ -280,9 +280,7 @@ bottom: 60px;
 
 /*MEDIA QUERY*/
 @media screen and (max-width: $breakMedium){
-  .big-paragraph{
-    font-size: 15px;
-  }
+
   .menu{
     width: 25vw;
   }
@@ -308,6 +306,11 @@ bottom: 60px;
 
   
   
+}
+@media screen and (max-width: $breakMedium) and (min-width: $breakMobile){
+  .big-paragraph{
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: $breakSmall){
   .big-header{
@@ -338,6 +341,7 @@ bottom: 60px;
     }
     .big-paragraph{
       line-height: 1.5;
+      font-size: 14px;
     }
     
   }
