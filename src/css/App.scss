@@ -74,6 +74,7 @@
   height: 100vh;
   width: 100vw;
   box-sizing: border-box;
+  overflow-y: scroll;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -82,7 +83,7 @@
 
   @include transition(background-position 10000ms ease-out);
   &__container{
-    padding-top:$xlargeSpace;
+    padding-top:30px;
     padding-left: 290px;
     overflow: hidden;
     width: 900px;
